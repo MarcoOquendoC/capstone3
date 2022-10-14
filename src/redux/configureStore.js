@@ -1,20 +1,12 @@
-import {
-  applyMiddleware,
-  combineReducers,
-  configureStore,
-} from '@reduxjs/toolkit';
-import thunk from 'redux-thunk';
 import logger from 'redux-logger';
+import { configureStore } from '@reduxjs/toolkit';
+import homeReducer from './home';
 
-// root Reducer
-const rootReducer = combineReducers({ });
-
-// Redux store
-const store = configureStore(
-  {
-    reducer: rootReducer,
+const store = configureStore({
+  reducer: {
+    images: homeReducer,
   },
-  applyMiddleware(logger, thunk),
-);
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+});
 
 export default store;
