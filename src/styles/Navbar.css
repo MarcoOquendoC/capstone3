@@ -47,6 +47,17 @@ ul li a:hover {
   text-decoration: none;
 }
 
+.color {
+  left: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.5;
+  height: 150px;
+  position: fixed;
+  background-color: #fff;
+  filter: alpha(opacity=50);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .logo {
     animation: App-logo-spin infinite 20s linear;
@@ -55,10 +66,10 @@ ul li a:hover {
 
 @keyframes App-logo-spin {
   0%   {
-    transform: rotate(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: rotateX(360deg) rotateY(360deg);
   }
 }
