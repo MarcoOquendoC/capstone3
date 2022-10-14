@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { fetchImagesInfo } from '../redux/home';
 
-const Home = () => {
+const Details = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -22,4 +22,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Details;
