@@ -7,15 +7,15 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="nav">
+        <header className="nav">
           <Navbar />
-        </div>
-        <section className="content">
+        </header>
+        <main className="content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
           </Routes>
-        </section>
+        </main>
       </div>
     </Router>
   );
