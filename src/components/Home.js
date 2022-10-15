@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { v4 as uuidv4 } from 'uuid';
 import { fetchImagesInfo } from '../redux/home';
+import HomeImageList from './HomeImageList';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -10,14 +10,18 @@ const Home = () => {
     dispatch(fetchImagesInfo());
   }, [dispatch]);
 
+  const searchParameter = useSelector((state) => state.search);
+  const searchState = new RegExp(searchParameter, 'ig');
+
   const pictures = useSelector((state) => state.images);
-  const picturesList = pictures.map((picture) => <img key={uuidv4()} src={picture.picsumUrl} alt="random" />);
+  const filteredPictures = pictures.filter((picture) => searchState.test(picture.author));
 
   return (
     <div className="profiles">
-      <h2>Select a Category</h2>
-      {picturesList}
-      <h2>Second Image</h2>
+      <h2>Images</h2>
+      <table>
+        <HomeImageList pictures={filteredPictures} />
+      </table>
     </div>
   );
 };
