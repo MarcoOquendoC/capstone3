@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+img:hover {
+  opacity: 0.5;
 }
