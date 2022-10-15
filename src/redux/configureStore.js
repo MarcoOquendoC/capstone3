@@ -1,11 +1,15 @@
 import logger from 'redux-logger';
-import { configureStore } from '@reduxjs/toolkit';
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import homeReducer from './home';
+import navbarSearch from './navbarSearch';
+
+const rootReducer = combineReducers({
+  images: homeReducer,
+  search: navbarSearch,
+});
 
 const store = configureStore({
-  reducer: {
-    images: homeReducer,
-  },
+  reducer: rootReducer,
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
