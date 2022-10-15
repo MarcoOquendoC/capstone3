@@ -7,11 +7,11 @@ import '../styles/Navbar.css';
 
 export default function Navigation() {
   const [state, updateState] = useState(true);
+  const dispatch = useDispatch();
+
   const handleClick = () => {
     updateState(!state);
   };
-
-  const dispatch = useDispatch();
 
   const handleChange = (e) => {
     const filter = e.target.value;
@@ -26,21 +26,21 @@ export default function Navigation() {
         <h1 className="hText">Guess The Blur</h1>
       </span>
       <span>🎲</span>
-      <button type="button" onClick={() => handleClick()}>
-        🔍
-      </button>
+      <button type="button" onClick={() => handleClick()}>🔍</button>
+
       {state && (
         <>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/details">Details</NavLink>
         </>
       )}
+
       {!state && (
-        <div>
+        <p>
           <label htmlFor="search">
             <input onChange={(e) => handleChange(e)} id="search" type="text" />
           </label>
-        </div>
+        </p>
       )}
     </nav>
   );
