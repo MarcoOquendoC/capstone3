@@ -15,13 +15,15 @@ const Home = () => {
 
   const pictures = useSelector((state) => state.images);
   const filteredPictures = pictures.filter((picture) => searchState.test(picture.author));
+  const first20FilteredPictures = filteredPictures.slice(0, 20);
+  const sortedPictures = first20FilteredPictures.sort((a, b) => a.id - b.id);
 
   return (
     <div className="profiles">
       <h2>Images</h2>
-      <table>
-        <HomeImageList pictures={filteredPictures} />
-      </table>
+      <section>
+        <HomeImageList pictures={sortedPictures} />
+      </section>
     </div>
   );
 };
