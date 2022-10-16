@@ -29,18 +29,13 @@ export default function Navigation() {
       <button type="button" onClick={() => handleClick()}>🔍</button>
 
       {state && (
-        <>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/details">Details</NavLink>
-        </>
+      <NavLink to="/">Home</NavLink>
       )}
 
       {!state && (
-        <p>
-          <label htmlFor="search">
-            <input onChange={(e) => handleChange(e)} id="search" type="text" />
-          </label>
-        </p>
+      <label htmlFor="search">
+        <input onChange={(e) => handleChange(e)} id="search" type="text" />
+      </label>
       )}
     </nav>
   );
