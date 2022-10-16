@@ -1,48 +1,48 @@
-import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
+import { Link } from 'react-router-dom';
 import '../styles/HomeImageListRow.css';
 
 const HomeImageListRow = (props) => {
   const { picture } = props;
   const {
-    author, nosizeUrl,
+    author, nosizeUrl, id,
   } = picture;
 
   const size = '/50';
-  const size1 = '/200/300';
-  const picsumUrlComplete = `${nosizeUrl}${size}`;
-  const picsumUrlComplete1 = `${nosizeUrl}${size1}`;
+  const picsumUrlSmall = `${nosizeUrl}${size}`;
 
-  const [state, updateState] = useState(false);
-  const handleClick = () => {
-    updateState(!state);
+  const style = {
+    root: {
+      backgroundImage: `url(${picsumUrlSmall})`,
+      overflow: 'hidden',
+    },
   };
-  const styles = state ? { display: 'block' } : { display: 'none' };
+
   return (
-    <tr onClick={() => handleClick()}>
-      <td><img key={uuidv4()} src={picsumUrlComplete} alt="random" /></td>
-      <td>| </td>
-      <td>Author: </td>
-      <td>{author}</td>
-      <td style={styles} className="popup">
-        this is the popup
-        <button type="button" onClick={() => handleClick()}>X</button>
-        <img key={uuidv4()} src={picsumUrlComplete1} alt="random" />
-      </td>
-    </tr>
+    <p style={style}>
+      <Link to="/details" state={id} key={id}>
+        <span><img key={uuidv4()} src={picsumUrlSmall} alt="random" /></span>
+        <span>| </span>
+        <span>Author: </span>
+        <span>{author}</span>
+        <span>{id}</span>
+      </Link>
+    </p>
   );
 };
 
 HomeImageListRow.defaultProps = {
   picture: {},
   author: '',
+  id: '',
   nosizeUrl: '',
 };
 
 HomeImageListRow.propTypes = {
   picture: PropTypes.instanceOf(Object),
   author: PropTypes.string,
+  id: PropTypes.string,
   nosizeUrl: PropTypes.string,
 };
 

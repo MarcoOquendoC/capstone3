@@ -6,9 +6,11 @@ const HomeImageList = (props) => {
   const { pictures } = props;
 
   return (
-    <tbody>
-      { pictures.map((picture) => <HomeImageListRow key={picture.id} picture={picture} />)}
-    </tbody>
+    <div>
+      { pictures.map((picture) => (
+        <HomeImageListRow key={picture.id} picture={picture} />
+      ))}
+    </div>
   );
 };
 
