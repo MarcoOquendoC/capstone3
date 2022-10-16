@@ -4,37 +4,6 @@
   box-sizing: border-box;
 }
 
-nav {
-  width: 93%;
-  display: flex;
-  padding: 24px 4%;
-  align-items: center;
-  justify-content: space-between;
-}
-
-ul {
-  gap: 20px;
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  justify-content: space-between;
-}
-
-ul li a {
-  opacity: 0.5;
-  outline: none;
-  font-size: 1rem;
-  color: #121212;
-  font-weight: bold;
-  letter-spacing: 1.9px;
-  text-decoration: none;
-  font-family: 'Lato', sans-serif;
-}
-
-ul li a:hover {
-  color: #0290ff;
-}
-
 img:hover {
   opacity: 0.5;
 }
