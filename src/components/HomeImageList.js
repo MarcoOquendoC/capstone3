@@ -6,11 +6,11 @@ const HomeImageList = (props) => {
   const { pictures } = props;
 
   return (
-    <div>
+    <section>
       { pictures.map((picture) => (
         <HomeImageListRow key={picture.id} picture={picture} />
       ))}
-    </div>
+    </section>
   );
 };
 

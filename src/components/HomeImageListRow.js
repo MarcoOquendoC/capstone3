@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { v4 as uuidv4 } from 'uuid';
 import { Link } from 'react-router-dom';
 import '../styles/HomeImageListRow.css';
 
@@ -9,26 +8,20 @@ const HomeImageListRow = (props) => {
     author, nosizeUrl, id,
   } = picture;
 
-  const size = '/50';
-  const picsumUrlSmall = `${nosizeUrl}${size}`;
+  const size1 = 200;
+  const size2 = 200;
+  const picsumUrlSmall = `${nosizeUrl}/${size1}/${size2}`;
 
-  const style = {
-    root: {
-      backgroundImage: `url(${picsumUrlSmall})`,
-      overflow: 'hidden',
-    },
-  };
+  const style = { backgroundImage: `url(${picsumUrlSmall})`, width: `${size1}px`, height: `${size2}px` };
 
   return (
-    <p style={style}>
-      <Link to="/details" state={id} key={id}>
-        <span><img key={uuidv4()} src={picsumUrlSmall} alt="random" /></span>
-        <span>| </span>
+    <Link to="/details" state={id} key={id} className="row">
+      <span style={style} />
+      <div className="info">
         <span>Author: </span>
         <span>{author}</span>
-        <span>{id}</span>
-      </Link>
-    </p>
+      </div>
+    </Link>
   );
 };
 

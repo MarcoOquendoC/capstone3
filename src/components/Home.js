@@ -19,12 +19,10 @@ const Home = () => {
   const sortedPictures = first20FilteredPictures.sort((a, b) => a.id - b.id);
 
   return (
-    <div className="profiles">
+    <main>
       <h2>Images</h2>
-      <section>
-        <HomeImageList pictures={sortedPictures} />
-      </section>
-    </div>
+      <HomeImageList pictures={sortedPictures} />
+    </main>
   );
 };
 

@@ -8,7 +8,7 @@ const ran = (max) => {
 
 const URL = `https://picsum.photos/v2/list?page=${ran(10)}&limit=100`;
 const baseUrl = 'https://picsum.photos/id/';
-const size = '/200/300/';
+const size = '/300/400/';
 
 const fetchImagesInfo = createAsyncThunk(
   'image/fetchingImageInfo',
