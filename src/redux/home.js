@@ -6,7 +6,7 @@ const ran = (max) => {
   return randomNumber;
 };
 
-const URL = `https://picsum.photos/v2/list?page=${ran(100)}&limit=20`;
+const URL = `https://picsum.photos/v2/list?page=${ran(10)}&limit=100`;
 const baseUrl = 'https://picsum.photos/id/';
 const size = '/200/300/';
 
@@ -15,12 +15,11 @@ const fetchImagesInfo = createAsyncThunk(
   async () => {
     const response = await fetch(URL);
     const images = await response.json();
-
     const imagesInfo = images.map(({
       // eslint-disable-next-line camelcase
       id, author, width, height, url, download_url,
     }) => ({
-      id,
+      id: parseInt(id, 10),
       author,
       width,
       height,
