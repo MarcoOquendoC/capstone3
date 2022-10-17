@@ -10,7 +10,7 @@ test('Details test', async () => {
     <React.StrictMode>
       <Provider store={store}>
         <Router>
-          <Details id="0" />
+          <Details />
         </Router>
       </Provider>
     </React.StrictMode>,
