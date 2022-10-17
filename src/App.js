@@ -1,18 +1,23 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  Routes, Route, useLocation,
+} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Details from './components/Details';
 import './styles/App.css';
 
 function App() {
+  const location = useLocation();
+  const id = location.state;
+
   return (
-    <Router className="App">
+    <div className="App">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/details" element={<Details />} />
+        <Route path="/details" element={<Details id={id} />} />
       </Routes>
-    </Router>
+    </div>
   );
 }
 
