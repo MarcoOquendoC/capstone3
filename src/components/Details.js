@@ -1,12 +1,15 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { useLocation } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-const Details = () => {
-  const location = useLocation();
-  const id = location.state;
+// import { useLocation } from 'react-router-dom';
+let pictures = [];
 
-  const pictures = useSelector((state) => state.images);
+const Details = (props) => {
+  const { id } = props;
+
+  pictures = useSelector((state) => state.images);
+
   const filteredPictures = pictures.filter((picture) => picture.id === id);
   const {
     author, blurUrl, grayUrl, height, width, picsumUrl,
@@ -30,6 +33,14 @@ const Details = () => {
       <h3>{author}</h3>
     </main>
   );
+};
+
+Details.defaultProps = {
+  id: pictures[0] ? pictures[0].id : 0,
+};
+
+Details.propTypes = {
+  id: PropTypes.number,
 };
 
 export default Details;
