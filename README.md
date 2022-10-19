@@ -52,7 +52,7 @@ To get a local copy up and running follow these simple steps.
 - **[Lorem Picsum API](https://picsum.photos/):** An API to provide random images.
 
 ## 🌎 Live Demo:
-- [Link](https://deploy-preview-1--friendly-rugelach-ed85f6.netlify.app/details)
+- [Link](https://deploy-preview-1--friendly-rugelach-ed85f6.netlify.app)
 
 ## Author
 ### 👤 Marco Oquendo
