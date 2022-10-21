@@ -50,7 +50,7 @@ export default function Navigation() {
           <NavLink to="/" onClick={() => handleClick()}>Search Mode</NavLink>
         )}
         {(inDetailsPage) && (
-          <NavLink to="/" onClick={() => handleClick()}>Home</NavLink>
+          <NavLink to="/" onClick={() => handleClick()}>Back</NavLink>
         )}
         {(!state) && (
           <NavLink to="/" onClick={() => exitSearch()}>Exit 🔍</NavLink>
