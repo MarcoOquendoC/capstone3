@@ -6,7 +6,7 @@ const ran = (max) => {
   return randomNumber;
 };
 
-const URL = `https://picsum.photos/v2/list?page=${ran(10)}&limit=100`;
+const URL = `https://picsum.photos/v2/list?page=${ran(50)}&limit=20`;
 const baseUrl = 'https://picsum.photos/id/';
 const size = '/300/400/';
 
