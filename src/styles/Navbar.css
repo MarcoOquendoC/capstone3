@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.logo-holder {
+  gap: 8px;
+  display: flex;
+  margin: 0 0 0 1rem;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+}
+
+.active {
+  color: #000;
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+
+nav {
+  display: flex;
+  padding: 24px 4%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.searchIcon {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+
+  .logo:hover {
+    animation: App-logo-spin infinite 3s linear;
+    opacity: 1;
+  }
+}
+
+@keyframes App-logo-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

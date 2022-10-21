@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+![Microverse](https://img.shields.io/badge/Microverse-blueviolet) 
+![HTML](https://img.shields.io/badge/-HTML-orange) 
+![CSS](https://img.shields.io/badge/-CSS-blue) 
+![JavaScript](https://img.shields.io/badge/-JavaScript-yellow) 
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=ffffff)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
+![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
+![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
-## Available Scripts
+# Guess the blur
+- "Guess the Blur" is a web app that displays a list of random pictures. The user can filter the list by author selecting the search mode. Also, the user can tap an item from the list to switch to the details page of the corresponding picture.
 
-In the project directory, you can run:
+## Project Documentation
+- [Link](https://www.loom.com/share/b5b04fb11a71453e90c24b8d481946f3) to Loom Video explaining the features of this project.
 
-### `npm start`
+## Getting Started
+To get a local copy up and running follow these simple steps.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+- VIsual Studio Code.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Setup
+- Open the terminal on your computer.
+- Navigate through directories using [change directory (cd)](https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10). command to where you want to clone the repository.
+- Type the following command then press ENTER: 
+  - git clone https://github.com/MarcoOquendoC/capstone3.git
+- the terminal will send to you information about your download.
+- Type the following command then press ENTER: 
+  - cd capstone3
+- **Type the following lists of commands and press ENTER after each command:**
+  - *Basic Setup*
+    - npm install
+    - npm start
 
-### `npm test`
+  - **Open project in VSC**
+    - code .
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - **Run Tests**
+  - npm test
 
-### `npm run build`
+## Built With
+- **HTML/CSS & JS best practices:** Correct use of tags, elements, properties and syntax.
+- **GitHub flow:** Correct use of Branches for deployment and features development.
+- **Linters Check:** Local and Pull Request check for errors, bugs and stylistic errors in code.
+- **Webpack:** Bundler to compile JavaScript modules and React components.
+- **REACTjs + REDUX:** JavaScript library for building user interface.
+- **Jest:** JS testing framework used for the app testing.
+- **[Lorem Picsum API](https://picsum.photos/):** An API to provide random images.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🌎 Live Demo:
+- [Link](https://deploy-preview-1--friendly-rugelach-ed85f6.netlify.app).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Author
+### 👤 Marco Oquendo
+- GitHub: [@MarcoOquendoC](https://github.com/MarcoOquendoC).
+- Twitter: [@marcooquendoc](https://twitter.com/marcooquendoc).
+- LinkedIn: [Marco Vinicio Oquendo](https://www.linkedin.com/in/vinicio-oquendo-4a289156/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Acknowledgments
+- I'm immensely grateful to all the people whose code I used.
+- [Peter Beshara](https://github.com/Peter1907/).
+- [Karla Delgado](https://github.com/karlavdelgadof).
+- [Lorem Picsum API](https://picsum.photos/) Created by David Marby & Nijiko Yonskai.
+- [Microverse](https://microverse.org/).
+- The logo has been taken [www.svgrepo.com](https://www.svgrepo.com/svg/73689/logo) under [CC0 License](https://www.svgrepo.com/page/licensing).
 
-### `npm run eject`
+## Inspiration
+- Original design from [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
+- Under the the [Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Show your support
+- Give a ⭐️ if you like this project!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📝 License
+- This project is [MIT](./LICENSE) licensed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 Webpage Picture
+![webPagePreview](https://user-images.githubusercontent.com/104022866/197196733-42194b1e-4909-49c5-8dd0-9a1d8a04983c.png).
