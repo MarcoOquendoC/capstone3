@@ -79,3 +79,4 @@ To get a local copy up and running follow these simple steps.
 - This project is [MIT](./LICENSE) licensed.
 
 ## 📝 Webpage Picture
+![webPagePreview](https://user-images.githubusercontent.com/104022866/197196733-42194b1e-4909-49c5-8dd0-9a1d8a04983c.png).
