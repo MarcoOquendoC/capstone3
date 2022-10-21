@@ -29,7 +29,7 @@ describe('Details test', () => {
         <Provider store={store}>
           <Router history={history}>
             <Routes>
-              <Route path="/coindetail" element={<Details />} />
+              <Route path="/detail" element={<Details />} />
             </Routes>
           </Router>
         </Provider>

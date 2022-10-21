@@ -6,19 +6,37 @@ Object {
   "baseElement": <body>
     <div>
       <main>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <h2>
           Images
         </h2>
-        <section />
+        <section
+          class="grid"
+        />
       </main>
     </div>
   </body>,
   "container": <div>
     <main>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <h2>
         Images
       </h2>
-      <section />
+      <section
+        class="grid"
+      />
     </main>
   </div>,
   "debug": [Function],
