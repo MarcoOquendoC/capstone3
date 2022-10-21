@@ -15,7 +15,7 @@
 - "Guess the Blur" is a web app that displays a list of random pictures. The user can filter the list by author selecting the search mode. Also, the user can tap an item from the list to switch to the details page of the corresponding picture.
 
 ## Project Documentation
-- Link to Loom Video explaining the features of this project
+- [Link](https://www.loom.com/share/b5b04fb11a71453e90c24b8d481946f3) to Loom Video explaining the features of this project.
 
 ## Getting Started
 To get a local copy up and running follow these simple steps.
@@ -24,8 +24,8 @@ To get a local copy up and running follow these simple steps.
 - VIsual Studio Code.
 
 ### Setup
-- Open the terminal on your computer
-- Navigate through directories using [change directory (cd)](https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10) command to where you want to clone the repository.
+- Open the terminal on your computer.
+- Navigate through directories using [change directory (cd)](https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10). command to where you want to clone the repository.
 - Type the following command then press ENTER: 
   - git clone https://github.com/MarcoOquendoC/capstone3.git
 - the terminal will send to you information about your download.
@@ -52,28 +52,30 @@ To get a local copy up and running follow these simple steps.
 - **[Lorem Picsum API](https://picsum.photos/):** An API to provide random images.
 
 ## 🌎 Live Demo:
-- [Link](https://deploy-preview-1--friendly-rugelach-ed85f6.netlify.app)
+- [Link](https://deploy-preview-1--friendly-rugelach-ed85f6.netlify.app).
 
 ## Author
 ### 👤 Marco Oquendo
-- GitHub: [@MarcoOquendoC](https://github.com/MarcoOquendoC)
-- Twitter: [@marcooquendoc](https://twitter.com/marcooquendoc)
-- LinkedIn: [Marco Vinicio Oquendo](https://www.linkedin.com/in/vinicio-oquendo-4a289156/)
+- GitHub: [@MarcoOquendoC](https://github.com/MarcoOquendoC).
+- Twitter: [@marcooquendoc](https://twitter.com/marcooquendoc).
+- LinkedIn: [Marco Vinicio Oquendo](https://www.linkedin.com/in/vinicio-oquendo-4a289156/).
 
 ## Acknowledgments
 - I'm immensely grateful to all the people whose code I used.
-- [Peter Beshara](https://github.com/Peter1907/)
-- [Karla Delgado](https://github.com/karlavdelgadof)
-- [Lorem Picsum API](https://picsum.photos/) Created by David Marby & Nijiko Yonskai
-- [Microverse](https://microverse.org/)
+- [Peter Beshara](https://github.com/Peter1907/).
+- [Karla Delgado](https://github.com/karlavdelgadof).
+- [Lorem Picsum API](https://picsum.photos/) Created by David Marby & Nijiko Yonskai.
+- [Microverse](https://microverse.org/).
 - The logo has been taken [www.svgrepo.com](https://www.svgrepo.com/svg/73689/logo) under [CC0 License](https://www.svgrepo.com/page/licensing).
 
 ## Inspiration
-- Original design from [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
-- Under the the [Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/)
+- Original design from [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
+- Under the the [Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ## Show your support
 - Give a ⭐️ if you like this project!
 
 ## 📝 License
 - This project is [MIT](./LICENSE) licensed.
+
+## 📝 Webpage Picture
