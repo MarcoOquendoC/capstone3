@@ -6,7 +6,7 @@ const HomeImageList = (props) => {
   const { pictures } = props;
 
   return (
-    <section>
+    <section className="grid">
       { pictures.map((picture) => (
         <HomeImageListRow key={picture.id} picture={picture} />
       ))}

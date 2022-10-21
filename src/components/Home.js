@@ -20,6 +20,13 @@ const Home = () => {
 
   return (
     <main>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <h2>Images</h2>
       <HomeImageList pictures={sortedPictures} />
     </main>

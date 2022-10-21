@@ -2,7 +2,6 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
-// import { useLocation } from 'react-router-dom';
 let pictures = [];
 
 const Details = (props) => {
@@ -17,20 +16,52 @@ const Details = (props) => {
 
   return (
     <main>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <h2>{author}</h2>
-      <img src={picsumUrl} alt="image1" />
-      <p>
-        Size:
-        {height}
-        /
-        {width}
-      </p>
-      <h3>{author}</h3>
-      <h3>Filter: Blur</h3>
-      <img src={blurUrl} alt="image3" />
-      <h3>Filter: Grayscale</h3>
-      <img src={grayUrl} alt="image2" />
-      <h3>{author}</h3>
+      <br />
+      <section className="section">
+        <article className="a">
+          <h3>No filter</h3>
+          <img src={picsumUrl} alt="image1" />
+          <p>
+            Size:
+            {height}
+            /
+            {width}
+            px
+          </p>
+          <br />
+        </article>
+        <article className="b">
+          <h3>Filter: Blur</h3>
+          <img src={blurUrl} alt="image2" />
+          <p>
+            Size:
+            {height}
+            /
+            {width}
+            px
+          </p>
+          <br />
+        </article>
+        <article className="c">
+          <h3>Filter: Grayscale</h3>
+          <img src={grayUrl} alt="image3" />
+          <p>
+            Size:
+            {height}
+            /
+            {width}
+            px
+          </p>
+        </article>
+      </section>
     </main>
   );
 };

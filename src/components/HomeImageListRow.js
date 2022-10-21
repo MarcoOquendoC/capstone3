@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import '../styles/HomeImageListRow.css';
+import '../styles/Home.css';
 
 const HomeImageListRow = (props) => {
   const { picture } = props;
@@ -12,14 +12,15 @@ const HomeImageListRow = (props) => {
   const size2 = 200;
   const picsumUrlSmall = `${nosizeUrl}/${size1}/${size2}`;
 
-  const style = { backgroundImage: `url(${picsumUrlSmall})`, width: `${size1}px`, height: `${size2}px` };
+  const style = {
+    backgroundImage: `url(${picsumUrlSmall})`,
+  };
 
   return (
-    <Link to="/details" state={id} key={id} className="row">
-      <span style={style} />
+    <Link to="/details" state={id} key={id} className="item">
+      <span className="image" style={style} />
       <div className="info">
-        <span>Author: </span>
-        <span>{author}</span>
+        {author}
       </div>
     </Link>
   );
