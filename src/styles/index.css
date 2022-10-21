@@ -15,11 +15,6 @@ body {
   background-color: rgb(86, 137, 228);
 }
 
-header {
-  z-index: 2;
-  position: fixed;
-}
-
 main {
   width: 100%;
   display: flex;
@@ -34,7 +29,9 @@ img:hover {
 }
 
 header {
+  z-index: 2;
   width: 100%;
+  position: fixed;
   padding-bottom: 1rem;
   margin-bottom: 0.5rem;
   border-bottom: 1px solid #000;

@@ -5,6 +5,18 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.item {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+}
+
+.item:hover {
+  opacity: 0.5;
+}
+
 .grid .item:nth-child(1) {
   background-color: var(--color2);
 }
@@ -83,18 +95,6 @@
 
 .grid .item:nth-child(20) {
   background-color: var(--color2);
-}
-
-.item {
-  width: 100%;
-  height: 150px;
-  display: flex;
-  text-decoration: none;
-  flex-direction: column;
-}
-
-.item:hover {
-  opacity: 0.5;
 }
 
 .image {
